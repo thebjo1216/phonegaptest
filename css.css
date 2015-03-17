@@ -1,4 +1,6 @@
-
+body img {
+    width: 100%;
+}
 body {
     background-color: #E3B4E1;
 }
