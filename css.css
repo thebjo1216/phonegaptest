@@ -73,3 +73,69 @@ button {
 .startsida a:hover {
          color: #555557;
 }
+.starta {
+    padding: 1% 1% 1% 1%;
+    background-color: white;
+    margin-top: 4%;
+    margin-left: 46%;
+    margin-right: 45%;
+    text-align: center;
+    box-shadow: 0 0 10px 2px white;
+         -webkit-border-radius: 15px;
+         -moz-border-radius: 15px; 
+         border-radius: 15px;
+    float: left;
+}
+.starta a:link,
+.starta a:visited {
+         text-decoration: none;
+         color: #000;
+}
+.starta a:focus,
+.starta a:hover {
+         color: #555557;
+}
+.skriv {
+    padding: 1% 1% 1% 1%;
+    background-color: white;
+    margin-top: 4%;
+    margin-left: 45%;
+    margin-right: 45%;
+    text-align: center;
+    box-shadow: 0 0 10px 2px white;
+         -webkit-border-radius: 15px;
+         -moz-border-radius: 15px; 
+         border-radius: 15px;
+    float: left;
+}
+.skriv a:link,
+.skriv a:visited {
+         text-decoration: none;
+         color: #000;
+}
+.skriv a:focus,
+.skriv a:hover {
+         color: #555557;
+}
+.avsluta {
+    padding: 1% 1% 1% 1%;
+    background-color: white;
+    margin-top: 4%;
+    margin-left: 46%;
+    margin-right: 45%;
+    text-align: center;
+    box-shadow: 0 0 10px 2px white;
+         -webkit-border-radius: 15px;
+         -moz-border-radius: 15px; 
+         border-radius: 15px;
+    float: left;
+}
+.avsluta a:link,
+.avsluta a:visited {
+         text-decoration: none;
+         color: #000;
+}
+.avsluta a:focus,
+.avsluta a:hover {
+         color: #555557;
+}
