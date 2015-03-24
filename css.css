@@ -29,16 +29,10 @@ button {
     margin-top: 5%;
 }
 .random {
-    padding: 1% 1% 1% 1%;
-    background-color: white;
     margin-top: 4%;
-    margin-left: 46%;
+    margin-left: 46.6%;
     margin-right: 45%;
     text-align: center;
-    box-shadow: 0 0 10px 2px white;
-         -webkit-border-radius: 15px;
-         -moz-border-radius: 15px; 
-         border-radius: 15px;
     float: left;
 }
 .random a:link,
@@ -51,16 +45,10 @@ button {
          color: #555557;
 }
 .startsida {
-    padding: 1% 1% 1% 1%;
-    background-color: white;
     margin-top: 3%;
-    margin-left: 45.5%;
+    margin-left: 46%;
     margin-right: 45%;
     text-align: center;
-    box-shadow: 0 0 10px 2px white;
-         -webkit-border-radius: 15px;
-         -moz-border-radius: 15px; 
-         border-radius: 15px;
     float: left;
     margin-bottom: 5%;
 }
@@ -74,16 +62,10 @@ button {
          color: #555557;
 }
 .starta {
-    padding: 1% 1% 1% 1%;
-    background-color: white;
     margin-top: 4%;
     margin-left: 46%;
     margin-right: 45%;
     text-align: center;
-    box-shadow: 0 0 10px 2px white;
-         -webkit-border-radius: 15px;
-         -moz-border-radius: 15px; 
-         border-radius: 15px;
     float: left;
 }
 .starta a:link,
@@ -96,16 +78,10 @@ button {
          color: #555557;
 }
 .skriv {
-    padding: 1% 1% 1% 1%;
-    background-color: white;
     margin-top: 4%;
     margin-left: 45%;
     margin-right: 45%;
     text-align: center;
-    box-shadow: 0 0 10px 2px white;
-         -webkit-border-radius: 15px;
-         -moz-border-radius: 15px; 
-         border-radius: 15px;
     float: left;
 }
 .skriv a:link,
@@ -118,16 +94,10 @@ button {
          color: #555557;
 }
 .avsluta {
-    padding: 1% 1% 1% 1%;
-    background-color: white;
     margin-top: 4%;
     margin-left: 46%;
     margin-right: 45%;
     text-align: center;
-    box-shadow: 0 0 10px 2px white;
-         -webkit-border-radius: 15px;
-         -moz-border-radius: 15px; 
-         border-radius: 15px;
     float: left;
 }
 .avsluta a:link,
