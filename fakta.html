@@ -11,9 +11,9 @@
 <body>
     
     <img src="header2.png" alt="Header"/>
-    <article></article>
+    <article id="articleid"></article>
     <div class="random">
-    <p><a class="btn btn-default btn-lg" href="#" role="button">Random</a></p>
+    <p><a class="btn btn-default btn-lg" onclick="factfunction()" role="button">Random</a></p>
     </div>
     <div class="startsida">
     <p><a class="btn btn-default btn-lg" href="index.html" role="button">Tillbaka till </br>startsidan</a></p>
@@ -21,5 +21,23 @@
 
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        factfunction();
+
+    });
+    function factfunction() {
+                $.get("http://therese.teknikprogrammet.org/gymnasiearbete/fakta.php",function(data){
+
+            var slumpVovve = Math.floor((Math.random() * data.length ) );   // 0 - 5
+
+            var text = "<p>" +data[slumpVovve].Rubrik+ " "+data[slumpVovve].Faktan+ "</p>";
+
+            $("#articleid").html(text);
+        });
+    }
+</script>
 </body>
 </html>

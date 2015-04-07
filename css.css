@@ -23,6 +23,9 @@ article{
          -moz-border-radius: 15px; 
          border-radius: 15px; 
 }
+#articleid {
+    padding-top: 15%;
+}
 button {
     width: 10%;
     margin-left: 45%;
@@ -126,18 +129,17 @@ button {
 .avsluta a:hover {
          color: #555557;
 }
-#hej {
-    margin-left: 32%;
-}
-#namnet {
-    height: 50px;
-    width: 400px;
-    margin-bottom: 2%;
-}
+
 #hejhej {
     margin-left: 24%;
 }
 #faktan {
     width: 600px;
     height: 250px;
+}
+#fungerarej
+{
+    margin-left: 40%;
+    color: red;
+    font-size: large;
 }
