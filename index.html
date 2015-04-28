@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 
-<html lang="sv">
+<html lang="sv"> 
 <head>
+    <!-- För att den ska klara å, ä och ö-->
     <meta charset="utf-8" />
+    
+    <!--        -->
     <title>Informationsapp</title>
+    
+    <!-- För att hämta knapparna till applikationen -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+    <!-- För att hämta designen till applikationen -->
     <link rel="stylesheet" href="css.css" />
+    
 </head>
 
 <body>
-    <img src="header2.png" alt="Header"/>
+    <!-- Headerbilden -->
+    <img src="header2.png" alt="Header"/> 
+    <!-- Knappen för att komma till själva fakta-sidan --> 
     <div class="starta">
     <p><a class="btn btn-default btn-lg" href="fakta.html" role="button">Starta</a></p>
     </div>
+    <!-- Knappen för att komma till sidan där man skriver egen fakta -->
     <div class="skriv">
     <p><a class="btn btn-default btn-lg" href="skriv.html" role="button">Skriv fakta</a></p>
-    </div> 
-    <div class="avsluta">
-    <p><a class="btn btn-default btn-lg" onclick="javascript:window.close()" role="button">Avsluta</a></p>
     </div>
     
-
+    <!-- JQuery och Bootstrap-script -->
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/bootstrap.min.js"></script>
     

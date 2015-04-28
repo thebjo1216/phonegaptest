@@ -2,29 +2,80 @@
 
 <html lang="sv">
 <head>
+    <!-- För att den ska klara å, ä och ö-->
     <meta charset="utf-8" />
+    
+    <!--        -->
     <title>Informationsapp</title>
+    
+    <!-- För att hämta knapparna till applikationen -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+      
+    !-- För att hämta designen till applikationen -->
     <link rel="stylesheet" href="css.css" />
 </head>
 
 <body>
+    <!-- Headerbilden -->
     <img src="header2.png" alt="Header"/>
+    <!-- Texten ovanför rutan --> 
     <p id="fungerarej"><b>Den här fuktionen fungerar ej just nu</b></p>
+    <!-- Rutan där man ska skriva fakta -->
     <form method='post'>
         <p>
-            <label id="hejhej">Fakta:</label>
+            <label id="hejhej">Fakta:</label> <!-- Texten bredrid rutan -->
             <input id="faktan"type='text' name='fakta' />
         </p>
     </form>
+    <!-- Skicka-knappen -->
     <div class="skicka">
-    <p><a class="btn btn-default btn-lg" role="button">Skicka</a></p>
+    <p><a class="btn btn-default btn-lg" role="button" onclick="Send();">Skicka</a></p>
     </div>
+    <!-- Startsida-knappen -->
     <div class="startsida">
     <p><a class="btn btn-default btn-lg" href="index.html" role="button">Tillbaka till </br>startsidan</a></p>
     </div>
 
+    <!-- JQuery och Bootstrap-script -->
     <script src="js/jquery-1.11.2.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        function Send() {
+            var indata = document.getElementById("faktan").value; //plocka från fält
+           http://therese.teknikprogrammet.org/gymnasiearbete/fakta.php
+        }
+        
+    //daniels skit
+    function clear() {
+       document.getElementById("Namn").value = "";
+       document.getElementById("Ras").value = "";
+       document.getElementById("Vikt").value = "";
+    }
+    
+    function update(){
+       $.get("http://teknikprogrammet.org/api.demo.php",function(data){
+            var output  = "<ul>";
+            for(var i = 0; i < data.length;i++){output+= "<li>"+data[i].Namn+" är en hund av rasen "+data[i].Ras+"</li>";}
+            output+="</ul>";
+            $("#voffs").html(output);
+        });
+    }
+    $(document).ready(function(){
+        
+        $("#click").click(function(){
+            var namn = document.getElementById("Namn").value; 
+            var ras = document.getElementById("Ras").value;
+            var vikt = document.getElementById("Vikt").value; 
+            var json =  '{"Namn":"'+namn+'","Ras":"'+ras+'","Vikt":"'+vikt+'"}';
+            //alert(json);
+            $.post( "http://teknikprogrammet.org/api.demo.php", json ,function(data){},"text");
+            clear();
+            update();
+        });
+        
+   
+    }); 
+
+    </script>
 </body>
 </html>
